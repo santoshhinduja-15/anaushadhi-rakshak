@@ -2,7 +2,6 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 import Welcome from "./components/Welcome";
 import Home from "./components/Home";
 import ExploreAllPlants from "./components/ExploreAllPlants";
@@ -16,6 +15,7 @@ import Peppermint from "./components/Peppermint";
 import GeoTaggedPlantInput from "./components/GeoTaggedPlantInput";
 import ClimateData from "./components/ClimateData";
 import DiseaseDiagnosis from "./components/DiseaseDiagnosis";
+import PlantHeatmap from "./components/PlantHeatmap";
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +39,8 @@ export default function App() {
         <Stack.Screen name="GeoTaggedPlantInput" component={GeoTaggedPlantInput} />
         <Stack.Screen name="ClimateData" component={ClimateData} />
         <Stack.Screen name="DiseaseDiagnosis" component={DiseaseDiagnosis} />
+        <Stack.Screen name="PlantHeatmap" component={PlantHeatmap} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -94,7 +94,7 @@ const Home = ({ navigation }) => {
         </TouchableOpacity>
       </Animatable.View>
 
-      {/* Disease Diagnosis (FIXED & CONSISTENT) */}
+      {/* Disease Diagnosis */}
       <Animatable.View animation="zoomIn" delay={1450}>
         <TouchableOpacity
           style={[styles.exploreButton, { backgroundColor: "#1B5E20" }]}
@@ -123,6 +123,18 @@ const Home = ({ navigation }) => {
           onPress={() => navigation.navigate("ClimateData")}
         >
           <Text style={styles.exploreButtonText}>View Climate Data</Text>
+        </TouchableOpacity>
+      </Animatable.View>
+
+      {/* 🔥 NEW: Plant Heatmap */}
+      <Animatable.View animation="zoomIn" delay={1600}>
+        <TouchableOpacity
+          style={[styles.exploreButton, { backgroundColor: "#00695C" }]}
+          onPress={() => navigation.navigate("PlantHeatmap")}
+        >
+          <Text style={styles.exploreButtonText}>
+            View Plant Heatmap
+          </Text>
         </TouchableOpacity>
       </Animatable.View>
 

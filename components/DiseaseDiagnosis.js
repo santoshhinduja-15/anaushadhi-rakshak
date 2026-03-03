@@ -40,7 +40,7 @@ export default function DiseaseDiagnosis({ navigation }) {
       return;
     }
 
-    const res = await ImagePicker.launchImageLibraryAsync({
+    const res = await ImagePicker.launchImageLibraryAsync({ 
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
       quality: 1,
     });
